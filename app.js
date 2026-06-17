@@ -97,6 +97,13 @@ const DATA = {
       date: "Aug 2025",
       link: "https://www.hackerrank.com/certificates/3f5bc2abdde9",
       icon: "fab fa-js-square"
+    },
+    {
+      name: "Linux Unhatched",
+      institution: "Cisco Networking Academy",
+      date: "Jun 2026",
+      link: "https://www.credly.com/badges/70f67cb9-a4b2-49c8-b366-e0ff428bfda1/public_url",
+      icon: "fab fa-js-square"
     }
   ]
 };
