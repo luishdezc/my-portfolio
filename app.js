@@ -64,31 +64,19 @@ const DATA = {
       { name: "SQL", pct: 80 },
     ],
     frontend: ["React", "Angular", "HTML5", "CSS3", "Tailwind", "Figma"],
-    backend: ["Node.js", "Express", "Spring Boot", "REST APIs", "GraphQL"],
-    tools: ["Git", "GitHub", "Docker", "VS Code", "Eclipse", "Postman", "Jira"],
-    concepts: ["OOP", "Data Structures", "Algorithms", "Design Patterns", "Agile / Scrum", "UX/UI Design", "Software Testing"]
+    backend: ["Node.js", "Express", "Spring Boot", "FastAPI", "REST APIs", "GraphQL"],
+    databases: ["MongoDB", "SQL Databases", "Apache Cassandra", "MongoDB Atlas"],
+    tools: ["Git", "GitHub", "Docker", "Linux",  "VS Code", "Eclipse", "Postman", "Jira", "GitHub Actions"],
+    ai_tools: ["Claude", "Claude Code", "ChatGPT", "Gemini"],
+    concepts: ["OOP", "Data Structures", "Algorithms", "Design Patterns", "Agile / Scrum", "UX/UI Design", "Software Testing", "Unit Testing", "BDD", "CI/CD"]
   },
 
   certifications: [
     {
-      name: "Python",
-      institution: "Kaggle",
-      date: "Feb 2023",
-      link: null,
-      icon: "fab fa-python"
-    },
-    {
-      name: "Fundamentos de ChatGPT",
-      institution: "Santander Open Academy",
-      date: "Jul 2025",
-      link: null,
-      icon: "fas fa-robot"
-    },
-    {
-      name: "JavaScript (Basic) Certificate",
-      institution: "HackerRank",
-      date: "Aug 2025",
-      link: "https://www.hackerrank.com/certificates/437d01364dc2",
+      name: "Linux Unhatched",
+      institution: "Cisco Networking Academy",
+      date: "Jun 2026",
+      link: "https://www.credly.com/badges/70f67cb9-a4b2-49c8-b366-e0ff428bfda1/public_url",
       icon: "fab fa-js-square"
     },
     {
@@ -99,11 +87,25 @@ const DATA = {
       icon: "fab fa-js-square"
     },
     {
-      name: "Linux Unhatched",
-      institution: "Cisco Networking Academy",
-      date: "Jun 2026",
-      link: "https://www.credly.com/badges/70f67cb9-a4b2-49c8-b366-e0ff428bfda1/public_url",
+      name: "JavaScript (Basic) Certificate",
+      institution: "HackerRank",
+      date: "Aug 2025",
+      link: "https://www.hackerrank.com/certificates/437d01364dc2",
       icon: "fab fa-js-square"
+    },
+    {
+      name: "Fundamentos de ChatGPT",
+      institution: "Santander Open Academy",
+      date: "Jul 2025",
+      link: null,
+      icon: "fas fa-robot"
+    },
+    {
+      name: "Python",
+      institution: "Kaggle",
+      date: "Feb 2023",
+      link: null,
+      icon: "fab fa-python"
     }
   ]
 };
@@ -446,13 +448,27 @@ function Skills() {
           </div>
 
           <div className="reveal reveal-delay-3">
+            <div className="skill-category-title">Databases</div>
+            <div className="skill-tags-group">
+              {DATA.skills.databases.map(s => <span className="skill-tag" key={s}>{s}</span>)}
+            </div>
+          </div>
+
+          <div className="reveal reveal-delay-4">
             <div className="skill-category-title">Tools & Platforms</div>
             <div className="skill-tags-group">
               {DATA.skills.tools.map(s => <span className="skill-tag" key={s}>{s}</span>)}
             </div>
           </div>
 
-          <div className="reveal reveal-delay-4">
+          <div className="reveal reveal-delay-5">
+            <div className="skill-category-title">AI Tools</div>
+            <div className="skill-tags-group">
+              {DATA.skills.ai_tools.map(s => <span className="skill-tag" key={s}>{s}</span>)}
+            </div>
+          </div>
+
+          <div className="reveal reveal-delay-6">
             <div className="skill-category-title">Concepts & Methodologies</div>
             <div className="skill-tags-group">
               {DATA.skills.concepts.map(s => <span className="skill-tag" key={s}>{s}</span>)}
