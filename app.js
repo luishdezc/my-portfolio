@@ -66,7 +66,8 @@ const DATA = {
     frontend: ["React", "Angular", "HTML5", "CSS3", "Tailwind", "Figma"],
     backend: ["Node.js", "Express", "Spring Boot", "FastAPI", "REST APIs", "GraphQL"],
     databases: ["MongoDB", "SQL Databases", "Apache Cassandra", "MongoDB Atlas"],
-    tools: ["Git", "GitHub", "Docker", "Linux",  "VS Code", "Eclipse", "Postman", "Jira", "GitHub Actions"],
+    cloud_infrastructure: ["AWS", "Terraform", "Linux", "Docker"],
+    tools: ["Git", "GitHub",  "VS Code", "Eclipse", "Postman", "Jira", "GitHub Actions"],
     ai_tools: ["Claude", "Claude Code", "ChatGPT", "Gemini"],
     concepts: ["OOP", "Data Structures", "Algorithms", "Design Patterns", "Agile / Scrum", "UX/UI Design", "Software Testing", "Unit Testing", "BDD", "CI/CD"]
   },
@@ -455,20 +456,27 @@ function Skills() {
           </div>
 
           <div className="reveal reveal-delay-4">
+            <div className="skill-category-title">Cloud & Infrastructure</div>
+            <div className="skill-tags-group">
+              {DATA.skills.cloud_infrastructure.map(s => <span className="skill-tag" key={s}>{s}</span>)}
+            </div>
+          </div>
+
+          <div className="reveal reveal-delay-5">
             <div className="skill-category-title">Tools & Platforms</div>
             <div className="skill-tags-group">
               {DATA.skills.tools.map(s => <span className="skill-tag" key={s}>{s}</span>)}
             </div>
           </div>
 
-          <div className="reveal reveal-delay-5">
+          <div className="reveal reveal-delay-6">
             <div className="skill-category-title">AI Tools</div>
             <div className="skill-tags-group">
               {DATA.skills.ai_tools.map(s => <span className="skill-tag" key={s}>{s}</span>)}
             </div>
           </div>
 
-          <div className="reveal reveal-delay-6">
+          <div className="reveal reveal-delay-7">
             <div className="skill-category-title">Concepts & Methodologies</div>
             <div className="skill-tags-group">
               {DATA.skills.concepts.map(s => <span className="skill-tag" key={s}>{s}</span>)}
